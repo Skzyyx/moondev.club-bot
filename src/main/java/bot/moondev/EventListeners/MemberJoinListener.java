@@ -17,21 +17,13 @@ public class MemberJoinListener extends ListenerAdapter {
         TextChannel channel = event.getGuild().getTextChannelById(Config.getString("joins_channel_id"));
 
         Member member = event.getMember();
-        String avatarUrl = member.getUser().getEffectiveAvatarUrl();
 
         MessageEmbed embed = new EmbedBuilder()
-                .setAuthor(Config.getString("join-member.author"))
-                .setTitle(Config.getString("join-member.title")
-                        .replace("{user-name}", member.getEffectiveName()))
-                .setDescription(Config.getString("join-member.description"))
-                .setFooter(Config.getString("join-member.footer"))
-                .setColor(Color.decode(Config.getString("join-member.color")))
-                .setThumbnail(avatarUrl)
+                .setDescription(String.format("**¡**%s acaba de aterrizar a `moondev.club`**!**", member.getAsMention()))
+                .setColor(0xbca2fd)
                 .build();
 
         assert channel != null;
-        channel.sendMessage(Config.getString("join-member.message")
-                        .replace("{user-mention}", member.getAsMention()))
-                .addEmbeds(embed).queue();
+        channel.sendMessageEmbeds(embed).queue();
     }
 }

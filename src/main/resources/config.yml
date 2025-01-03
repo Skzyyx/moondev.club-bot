@@ -2,19 +2,3 @@ guild_id: ""
 bot_token: ""
 joins_channel_id: ""
 reviews-channel_id: ""
-
-join-member:
-  message: "↪ {user-mention}"
-  author: "¡BIENVENIDO A MI SERVIDOR!"
-  title: "¡Bienvenido {user-name}!"
-  description: |
-    ¡Estás en nuestra nueva comunidad, puedes entrar a nuestro servidor y conseguir nuevos amigos!
-    
-    Recuerda seguir las reglas <#Canal Reglas>.
-    
-    > **Información general del servidor:**
-    
-    • **Tienda**: Próximamente
-    • **IP**: Próximamente
-  footer: "Copyright © 2024 | Mi Servidor"
-  color: "#00FF00"
