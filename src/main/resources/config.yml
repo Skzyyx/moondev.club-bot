@@ -1,7 +1,7 @@
-guild_id: "1319134874094800896"
-bot_token: "MTMyMzc0MzMwOTAzODA5MjM1MA.GYiYfK.NMMevV-JBMnzLMzZTjsF0ZFE8bbQXffBenl_iM"
-joins_channel_id: "1320499565270401044"
-reviews-channel_id: "1323771307808129125"
+guild_id: ""
+bot_token: ""
+joins_channel_id: ""
+reviews-channel_id: ""
 
 join-member:
   message: "↪ {user-mention}"
@@ -13,7 +13,7 @@ join-member:
     Recuerda seguir las reglas <#Canal Reglas>.
     
     > **Información general del servidor:**
-      
+    
     • **Tienda**: Próximamente
     • **IP**: Próximamente
   footer: "Copyright © 2024 | Mi Servidor"
